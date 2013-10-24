@@ -37,14 +37,14 @@ public class BloomfilterBenchmark {
         final Random r = new Random();
 
         // Generate elements first
-        List<String> existingElements = new ArrayList(elementCount);
+        List<String> existingElements = new ArrayList<String>(elementCount);
         for (int i = 0; i < elementCount; i++) {
             byte[] b = new byte[200];
             r.nextBytes(b);
             existingElements.add(new String(b));
         }
         
-        List<String> nonExistingElements = new ArrayList(elementCount);
+        List<String> nonExistingElements = new ArrayList<String>(elementCount);
         for (int i = 0; i < elementCount; i++) {
             byte[] b = new byte[200];
             r.nextBytes(b);

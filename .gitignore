@@ -2,3 +2,6 @@ build
 dist
 target/*
 release/*
+.classpath
+.settings/*
+.project
